@@ -72,3 +72,4 @@ console.log("User");
     console.log("guest");
     
 }
+console.log(person4)
