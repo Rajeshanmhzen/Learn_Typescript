@@ -1,7 +1,8 @@
+"use strict";
 // object, Array, tuple, Enum
 console.log("Lets learn Object");
 // object
-var person = {
+const person = {
     firstName: "Rajeshan",
     lastName: "Maharjan",
     age: 12
@@ -10,19 +11,19 @@ var person = {
 console.log(person); //access whole object
 console.log(person.firstName); // access only firstName from the object
 // Array
-var person2 = {
+const person2 = {
     firstName: "Rajeshan",
     lastName: "Maharjan",
     age: 22,
     skills: ["Reactjs", "Nodejs", "Tailwind"]
 };
 console.log(person2);
-var favlangauge;
+let favlangauge;
 favlangauge = ["Reactjs", "nodejs"];
-var favlangauge2; //if we use any then we loose the power of ts
+let favlangauge2; //if we use any then we loose the power of ts
 favlangauge2 = ["Reactjs", "nodejs", 21, true];
 // tuple 
-var person3 = {
+const person3 = {
     name: "Rajeshan Maharjan",
     age: 12,
     skills: ["Reactjs", "Nodejs"],
@@ -37,7 +38,7 @@ var Role;
     Role[Role["USER"] = 2] = "USER";
 })(Role || (Role = {}));
 ;
-var person4 = {
+const person4 = {
     name: "Rajeshan",
     age: 22,
     skills: ["React", "node"],
@@ -56,3 +57,4 @@ else if (person4.role === Role.USER) {
 else {
     console.log("guest");
 }
+console.log(person4);
