@@ -18,17 +18,41 @@ console.log("Learning the classes");
 // }
 // // accountingCopy.describe()
 // console.log(accountingCopy);
-// private, public access modifier --> byDegfault it is public
+// // private, public access modifier --> byDegfault it is public
+// class Department {
+// //     name:string;
+// //    private employees:string[];
+//     // employees:string[] = [];
+//     // constructor(n:string) {
+//     //     this.name = n
+//     //     this.employees = []
+//     // }
+//     constructor (name:string, private employees:string[]) {     //shorthand properties
+//     }
+//     describe(this:Department) {
+//         console.log("Department", this.name)
+//     }
+//     addEmployee(emp: string) {
+//         this.employees.push(emp)
+//     }
+//     printEmployeeInformation() {
+//         console.log("Number of employee", this.employees.length)
+//         console.log( this.employees)
+//     }
+// }
+// // const accounting = new Department("Accounting")
+// const accounting = new Department("Accounting",[])
+// accounting.addEmployee("Admin")
+// accounting.addEmployee("User")
+// accounting.addEmployee("Rajeshan")
+// accounting.printEmployeeInformation()
+// accounting.employees = ["xyz"]
+// readonly =>  it is used then the only one time we want to intialized the value
 class Department {
-    //     name:string;
-    //    private employees:string[];
-    // employees:string[] = [];
-    // constructor(n:string) {
-    //     this.name = n
-    //     this.employees = []
-    // }
-    constructor(name, employees) {
-        this.employees = employees;
+    constructor(n) {
+        this.name = n;
+        this.id = "d1";
+        this.employees = [];
     }
     describe() {
         console.log("Department", this.name);
@@ -41,10 +65,3 @@ class Department {
         console.log(this.employees);
     }
 }
-// const accounting = new Department("Accounting")
-const accounting = new Department("Accounting", []);
-accounting.addEmployee("Admin");
-accounting.addEmployee("User");
-accounting.addEmployee("Rajeshan");
-accounting.printEmployeeInformation();
-// accounting.employees = ["xyz"]
