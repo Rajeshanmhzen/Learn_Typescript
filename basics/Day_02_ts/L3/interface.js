@@ -1,11 +1,12 @@
 console.log("Learning interface");
-var user1;
-user1 = {
-    name: "maharjan",
-    age: 21,
-    greet: function (text) {
-        console.log("".concat(text, " ").concat(this.name));
+var Person1 = /** @class */ (function () {
+    function Person1(n) {
+        this.name = n;
     }
-};
-console.log(user1);
-user1.greet("hi there, i am Rajeshan");
+    Person1.prototype.greet = function (text) {
+        console.log("".concat(text, " ").concat(this.name));
+    };
+    return Person1;
+}());
+var p1 = new Person1("Rajeshan");
+p1.greet("Hi, i am ");
